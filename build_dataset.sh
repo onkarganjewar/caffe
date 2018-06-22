@@ -6,8 +6,8 @@ EXAMPLE=examples/cats_dogs_classification
 DATA=data/kaggle-cats-dogs
 TOOLS=build/tools
 
-TRAIN_DATA_ROOT=/Users/ganon01/Documents/Work/Hackathon/image-classification/caffe/data/kaggle-cats-dogs/train
-VAL_DATA_ROOT=/Users/ganon01/Documents/Work/Hackathon/image-classification/caffe/data/kaggle-cats-dogs/train
+TRAIN_DATA_ROOT=/Users/ganon01/Documents/Work/Hackathon/image-classification/caffe/data/kaggle-cats-dogs/train/
+VAL_DATA_ROOT=/Users/ganon01/Documents/Work/Hackathon/image-classification/caffe/data/kaggle-cats-dogs/train/
 # Yes, both root(s) are same. I kept it that way intentionally.
 
 # Set RESIZE=true to resize the images to 256x256. Leave as false if images have

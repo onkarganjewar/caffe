@@ -10,10 +10,10 @@ layer {
   transform_param {
     mirror: true
     crop_size: 227
-    mean_file: "data/kaggle-cats-dogs/kaggle_cats_dogs_mean.binaryproto"
+    mean_file: "/Users/ganon01/Documents/Work/Hackathon/image-classification/caffe/data/kaggle-cats-dogs/kaggle_cats_dogs_mean.binaryproto"
   }
   data_param {
-    source: "examples/cats_dogs_classification/kaggle_cats_dogs_dataset_train_lmdb"
+    source: "/Users/ganon01/Documents/Work/Hackathon/image-classification/caffe/examples/cats_dogs_classification/kaggle_cats_dogs_dataset_train_lmdb"
     batch_size: 256
     backend: LMDB
   }
@@ -29,10 +29,10 @@ layer {
   transform_param {
     mirror: false
     crop_size: 227
-    mean_file: "data/kaggle-cats-dogs/kaggle_cats_dogs_mean.binaryproto"
+    mean_file: "/Users/ganon01/Documents/Work/Hackathon/image-classification/caffe/data/kaggle-cats-dogs/kaggle_cats_dogs_mean.binaryproto"
   }
   data_param {
-    source: "examples/cats_dogs_classification/kaggle_cats_dogs_dataset_val_lmdb"
+    source: "/Users/ganon01/Documents/Work/Hackathon/image-classification/caffe/examples/cats_dogs_classification/kaggle_cats_dogs_dataset_val_lmdb"
     batch_size: 50
     backend: LMDB
   }

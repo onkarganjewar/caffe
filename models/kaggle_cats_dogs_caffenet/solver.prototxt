@@ -40,4 +40,4 @@ solver_mode: CPU
 
 
 # Note: to run this, execute command like:
-#
+# $ ./models/kaggle_cats_dogs_caffenet/train_caffenet.sh

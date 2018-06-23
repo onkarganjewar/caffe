@@ -30,7 +30,7 @@ display: 20
 max_iter: 45000
 
 # Store the current status every snapshot iterations for later use to resume the training
-snapshot: 1000
+snapshot: 500
 
 # Use this to resume the training if stopped
 snapshot_prefix: "/Users/ganon01/Documents/Work/Hackathon/image-classification/caffe/models/kaggle_cats_dogs_alexnet/caffe_alexnet_train"

@@ -37,3 +37,7 @@ snapshot_prefix: "models/kaggle_cats_dogs_caffenet/caffenet_train"
 
 # Run the net using solver_mode CPU
 solver_mode: CPU
+
+
+# Note: to run this, execute command like:
+#

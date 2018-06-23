@@ -3,9 +3,11 @@ set -ex
 
 DIR="$( cd "$(dirname "$0")" ; pwd -P )"
 
-CAFFE_ROOT_DIR=$DIR/../../../caffe
+CAFFE_ROOT_DIR="/Users/ganon01/Documents/Work/Hackathon/image-classification/caffe"
 
 $CAFFE_ROOT_DIR/build/tools/caffe train \
-    --solver=models/bvlc_googlenet/solver.prototxt \
-    --snapshot=models/bvlc_googlenet/caffenet_train_10000.solverstate.h5 \
-    $@
+    --solver=$CAFFE_ROOT_DIR/models/kaggle_cats_dogs_alexnet/solver.prototxt \
+    --snapshot=$CAFFE_ROOT_DIR/models/kaggle_cats_dogs_alexnet/alexnet_train_iter_1041.solverstate >> $CAFFE_ROOT_DIR/models/kaggle_cats_dogs_alexnet/caffe_alexnet_train.log 2>&1 \
+    | tee $CAFFE_ROOT_DIR/models/kaggle_cats_dogs_alexnet/caffe_alexnet_train.log &
+
+echo "Training resumed..."

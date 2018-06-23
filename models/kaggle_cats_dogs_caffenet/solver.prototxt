@@ -33,7 +33,7 @@ max_iter: 40000
 snapshot: 500
 
 # Use this to resume the training if stopped
-snapshot_prefix: "/Users/ganon01/Documents/Work/Hackathon/image-classification/caffe/models/kaggle_cats_dogs_caffenet/caffenet_train"
+snapshot_prefix: "/Users/ganon01/Documents/Work/Hackathon/image-classification/caffe/models/kaggle_cats_dogs_caffenet/caffe_caffenet_train"
 
 # Run the net using solver_mode CPU
 solver_mode: CPU

@@ -135,7 +135,12 @@ def plot_chart(chart_type, path_to_png, path_to_log_list):
     plt.xlabel(x_axis_field)
     plt.ylabel(y_axis_field)
     plt.savefig(path_to_png)
-    plt.show()
+    # plt.show() # Blocks the execution of the program and prevents script from completion
+    plt.show(block=False)
+    # OR
+    # plt.ion() # Turn interactive mode on.
+    # plt.show() # In non-interactive mode, display all figures and block until the figures have been closed
+    # plt.pause(seconds) # Pause for *interval* seconds
 
 def print_help():
     print """This script mainly serves as the basis of your customizations.

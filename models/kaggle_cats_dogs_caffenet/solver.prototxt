@@ -6,14 +6,15 @@ net: "/Users/ganon01/Documents/Work/Hackathon/image-classification/caffe/models/
 # 1 iteration = 1 forward pass over all the images in one batch
 # Note: You can find the "batch_size" in train_val.prototxt file for the same model. It is registered under the data_param of the "data" layer from TEST phase.
 
+
 # No of forward passes for validation test
-test_iter: 1000
+test_iter: 500 # (num_val_imgs/batch_size) works pretty well
 
 # For every test_interval iterations, test the learned net on the validation data
 test_interval: 1000
 
 # initial learning rate (lr)
-base_lr: 0.001
+base_lr: 0.01
 momentum: 0.9
 weight_decay: 0.0005 # learning rate decay schedule
 

@@ -22,7 +22,8 @@ weight_decay: 0.0005 # learning rate decay schedule
 
 lr_policy: "step"
 gamma: 0.1
-stepsize: 2500
+# stepsize: 2500
+stepsize: 100000
 
 # Display progress every 50 iterations
 display: 50
